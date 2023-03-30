@@ -18,6 +18,7 @@
   // JavaScript => TypeScript
   // Optional parameter
   // ?옵셔널 파라미터. 값을 전달해도 되고 안해도 된다.
+  // parameter는 2개인데 전달하는 전달하는 agument는 하나일 경우 에러가 발생하기 때문에 ?를 사용하거나 | undefinde를 추가해야한다.
   function printName(firstName: string, lastName?: string) {
     console.log(firstName);
     console.log(lastName);

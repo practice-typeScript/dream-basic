@@ -5,8 +5,9 @@
   // readonly는 받은 인자를 수정 불가능한 읽기 전용으로 만든다. 불변성을 보장한다.
   const fruits: string[] = ['apple', 'banna'];
   const scroes: Array<number> = [1, 3, 4];
-
-  function printArray(fruits: readonly string[]) {}
+  function printArray(fruits: readonly string[]) {
+    fruits.push;
+  }
 
   // Tuple
   // 서로다른 데이터 타입을 배열에 저장가능하다.

@@ -41,7 +41,7 @@
   //never
   // 함수에서 절대적으로 리턴되지 않을떄 명시적으로 사용한다.
   // 변수에 할당하지 않는다.
-  // throw를 던지면 함수가 죽기 때문에 리턴 값이 없다. 리턴할 계회없다.
+  // throw를 던지면 함수가 죽기 때문에 리턴 값이 없다. 리턴할 계회없다는 뜻.
   function throwError(message: string): never {
     // message -> server(log)
     // throw new Error(message)
