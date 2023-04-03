@@ -12,7 +12,7 @@
     x: 0,
     y: 0,
   };
-  type Move = 'up' | 'down' | 'left' | 'right';
+  type Move = 'up' | 'down' | 'left' | 'right' | 'he';
 
   function move(direction: Move) {
     switch (direction) {
@@ -30,8 +30,12 @@
       case 'right':
         position.x += 1;
         break;
+      case 'he':
+        position.x += 1;
+        break;
       default:
-        throw Error('잘못된 parmeter입니다.');
+        const invalid: never = direction;
+        throw Error(`unknown direction: ${invalid}`);
     }
   }
 
@@ -44,4 +48,5 @@
   console.log(position); // { x: -1, y: 0}
   move('right');
   console.log(position); // { x: 0, y: 0}
+  move('ss');
 }
